@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Users, MapPin, MessageCircle, Shield, Zap, Globe } from "lucide-react"
+import { ArrowRight, Users, MapPin, MessageCircle, Shield, Zap, Globe,   CircleDollarSign } from "lucide-react"
 import Link from "next/link"
 
 export default function HomePage() {
@@ -27,6 +27,9 @@ export default function HomePage() {
               </Link>
               <Link href="/admin" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
                 Admin
+              </Link>
+              <Link href="/Finders" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+                Finders
               </Link>
             </div>
             <div className="flex items-center space-x-4">
@@ -55,9 +58,8 @@ export default function HomePage() {
               Build Community
             </span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Connect with people in your area to exchange goods you don't need for items you want. Sustainable, local,
-            and community-driven trading made simple.
+          <p className="text-[17px] text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Trade smarter, live better. 🌱Exchange goods you no longer need for items you truly want — no cash required. Or, help others find exactly what they’re looking for and get paid for your effort.Sustainable, local, and community-driven — making trading simple, rewarding, and fun.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/discover">
@@ -88,7 +90,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -121,6 +123,18 @@ export default function HomePage() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Verified Users</h3>
                 <p className="text-gray-600 leading-relaxed">
                   User verification and rating system ensures safe and trustworthy exchanges.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  < CircleDollarSign className="h-8 w-8 text-blue-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Earn Money</h3>
+                <p className="text-gray-600 leading-relaxed">
+                Earn money by helping people find what they need — and getting  paid for it.
                 </p>
               </CardContent>
             </Card>

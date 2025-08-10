@@ -17,6 +17,7 @@ export default function SignUpPage() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
+    userName: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -90,6 +91,23 @@ export default function SignUpPage() {
                 </div>
               </div>
 
+               <div>
+                  <Label htmlFor="lastName">User Name</Label>
+                  <div className="relative mt-1">
+                    <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+                    <Input
+                      id="userName"
+                      type="text"
+                      placeholder="Doe"
+                      value={formData.lastName}
+                      onChange={(e) => handleInputChange("userName", e.target.value)}
+                      className="pl-10"
+                      required
+                    />
+                  </div>
+                </div>
+        
+
               {/* Email */}
               <div>
                 <Label htmlFor="email">Email Address</Label>
@@ -115,7 +133,23 @@ export default function SignUpPage() {
                   <Input
                     id="location"
                     type="text"
-                    placeholder="City, State"
+                    placeholder="State-Abuja"
+                    value={formData.location}
+                    onChange={(e) => handleInputChange("location", e.target.value)}
+                    className="pl-10"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <Label htmlFor="location">Location</Label>
+                <div className="relative mt-1">
+                  <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+                  <Input
+                    id="location"
+                    type="text"
+                    placeholder="City- asokoro"
                     value={formData.location}
                     onChange={(e) => handleInputChange("location", e.target.value)}
                     className="pl-10"
