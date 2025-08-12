@@ -5,41 +5,41 @@ import Link from "next/link"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-orange-50">
       {/* Navigation */}
       <nav className="border-b bg-white/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
                 Trade 🤝 Barter
               </div>
             </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/discover" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+            <div className="hidden lg:flex items-center space-x-8">
+              <Link href="/discover" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
                 Discover
               </Link>
-              <Link href="/how-it-works" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+              <Link href="/how-it-works" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
                 How it Works
               </Link>
-              <Link href="/safety" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+              <Link href="/safety" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
                 Safety
               </Link>
-              <Link href="/admin" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+              <Link href="/admin" className="text-slate-700 hover:text-orange-600 font-medium transition-colors">
                 Admin
               </Link>
-              <Link href="/Finders" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+              <Link href="/Finders" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
                 Finders
               </Link>
             </div>
-            <div className="flex items-center space-x-4">
-              <Link href="/login">
-                <Button variant="ghost" className="font-medium">
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              <Link href="/login" className="hidden sm:block">
+                <Button variant="ghost" className="font-medium text-sm sm:text-base">
                   Sign In
                 </Button>
               </Link>
               <Link href="/signup">
-                <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 font-medium">
+                <Button className="bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 font-medium text-sm sm:text-base px-3 sm:px-4">
                   Get Started
                 </Button>
               </Link>
@@ -53,7 +53,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
             Trade Goods,
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
               {" "}
               Build Community
             </span>
@@ -65,7 +65,7 @@ export default function HomePage() {
             <Link href="/discover">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-3"
+                className="bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-lg px-8 py-3"
               >
                 Start Trading
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -93,8 +93,8 @@ export default function HomePage() {
           <div className="grid md:grid-cols-4 gap-8">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <MapPin className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <MapPin className="h-8 w-8 text-purple-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Location-Based</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -105,8 +105,8 @@ export default function HomePage() {
 
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <MessageCircle className="h-8 w-8 text-purple-600" />
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <MessageCircle className="h-8 w-8 text-orange-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Secure Chat</h3>
                 <p className="text-gray-600 leading-relaxed">

@@ -37,12 +37,12 @@ export default function SignUpPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-orange-50 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-block">
-            <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
               Trade 🤝 Barter
             </div>
           </Link>
@@ -92,14 +92,14 @@ export default function SignUpPage() {
               </div>
 
                <div>
-                  <Label htmlFor="lastName">User Name</Label>
+                  <Label htmlFor="userName">User Name</Label>
                   <div className="relative mt-1">
                     <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                     <Input
                       id="userName"
                       type="text"
-                      placeholder="Doe"
-                      value={formData.lastName}
+                      placeholder="johndoe123"
+                      value={formData.userName}
                       onChange={(e) => handleInputChange("userName", e.target.value)}
                       className="pl-10"
                       required
@@ -133,23 +133,7 @@ export default function SignUpPage() {
                   <Input
                     id="location"
                     type="text"
-                    placeholder="State-Abuja"
-                    value={formData.location}
-                    onChange={(e) => handleInputChange("location", e.target.value)}
-                    className="pl-10"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div>
-                <Label htmlFor="location">Location</Label>
-                <div className="relative mt-1">
-                  <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
-                  <Input
-                    id="location"
-                    type="text"
-                    placeholder="City- asokoro"
+                    placeholder="e.g., Lagos, Nigeria"
                     value={formData.location}
                     onChange={(e) => handleInputChange("location", e.target.value)}
                     className="pl-10"
@@ -215,13 +199,13 @@ export default function SignUpPage() {
                     onCheckedChange={(checked) => handleInputChange("agreeToTerms", checked as boolean)}
                     className="mt-0.5"
                   />
-                  <Label htmlFor="terms" className="text-sm text-gray-600 leading-relaxed">
+                  <Label htmlFor="terms" className="text-sm text-slate-600 leading-relaxed">
                     I agree to the{" "}
-                    <Link href="/terms" className="text-blue-600 hover:underline">
+                    <Link href="/terms" className="text-purple-600 hover:underline">
                       Terms of Service
                     </Link>{" "}
                     and{" "}
-                    <Link href="/privacy" className="text-blue-600 hover:underline">
+                    <Link href="/privacy" className="text-purple-600 hover:underline">
                       Privacy Policy
                     </Link>
                   </Label>
@@ -234,7 +218,7 @@ export default function SignUpPage() {
                     onCheckedChange={(checked) => handleInputChange("agreeToMarketing", checked as boolean)}
                     className="mt-0.5"
                   />
-                  <Label htmlFor="marketing" className="text-sm text-gray-600">
+                  <Label htmlFor="marketing" className="text-sm text-slate-600">
                     I'd like to receive updates about new features and trading opportunities
                   </Label>
                 </div>
@@ -243,7 +227,7 @@ export default function SignUpPage() {
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 text-lg"
+                className="w-full bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-white font-semibold py-3 text-lg"
                 disabled={!formData.agreeToTerms}
               >
                 Create Account
@@ -252,9 +236,9 @@ export default function SignUpPage() {
 
             {/* Sign In Link */}
             <div className="mt-6 text-center">
-              <p className="text-gray-600">
+              <p className="text-slate-600">
                 Already have an account?{" "}
-                <Link href="/login" className="text-blue-600 hover:underline font-medium">
+                <Link href="/login" className="text-purple-600 hover:underline font-medium">
                   Sign in here
                 </Link>
               </p>
