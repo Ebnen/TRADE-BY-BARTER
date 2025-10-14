@@ -11,9 +11,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
+              <img 
+                src="/logo1.png" 
+                alt="Trade & Barter Logo" 
+                className="h-16 w-auto"
+              />
+              {/* <div className="text-xl sm:text-[14px] font-bold bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
                 Trade 🤝 Barter
-              </div>
+              </div> */}
             </div>
             <div className="hidden lg:flex items-center space-x-8">
               <Link href="/discover" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
@@ -24,9 +29,6 @@ export default function HomePage() {
               </Link>
               <Link href="/safety" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
                 Safety
-              </Link>
-              <Link href="/admin" className="text-slate-700 hover:text-orange-600 font-medium transition-colors">
-                Admin
               </Link>
               <Link href="/Finders" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
                 Finders
@@ -192,7 +194,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold mb-4">Trade 🤝 Barter</div>
+              <div className="flex items-center mb-4">
+                <img 
+                  src="/logo1.png" 
+                  alt="Trade & Barter Logo" 
+                  className="h-8 w-auto mr-3"
+                />
+                <div className="text-2xl font-bold">Trade 🤝 Barter</div>
+              </div>
               <p className="text-gray-400">Connecting communities through sustainable trading.</p>
             </div>
             <div>

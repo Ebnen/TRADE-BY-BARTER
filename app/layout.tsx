@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: 'Trade&Bater',
   description: 'Help customers exchange goods for goods or money and also help one in finding difficult commodity',
   generator: 'EbenDev',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
