@@ -41,7 +41,12 @@ export default function HomePage() {
                 </Button>
               </Link>
               <Link href="/signup">
-                <Button className="bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 font-medium text-sm sm:text-base px-3 sm:px-4">
+                <Button className=" hidden bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 font-medium text-sm ">
+                  Get Started
+                </Button>
+              </Link>
+              <Link href="/login">
+                <Button className="bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600  sm:text-base px-3 sm:px-4">
                   Get Started
                 </Button>
               </Link>
