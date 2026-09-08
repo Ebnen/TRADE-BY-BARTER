@@ -25,7 +25,7 @@ export default function HomePage() {
                 Discover
               </Link>
               <Link href="/how-it-works" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
-                How it Works
+                How It Works
               </Link>
               <Link href="/safety" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
                 Safety
@@ -214,7 +214,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link href="/how-it-works" className="hover:text-white transition-colors">
-                    How it Works
+                    How It Works
                   </Link>
                 </li>
                 <li>
