@@ -24,14 +24,23 @@ export default function HomePage() {
               <Link href="/discover" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
                 Discover
               </Link>
+              <Link href="/Finders" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
+                Finders
+              </Link>
+              <Link href="/marketplace" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
+                Marketplace
+              </Link>
+              <Link href="/messages" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
+                Messages
+              </Link>
+              <Link href="/profile" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
+                Profile
+              </Link>
               <Link href="/how-it-works" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
                 How It Works
               </Link>
               <Link href="/safety" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
                 Safety
-              </Link>
-              <Link href="/Finders" className="text-slate-700 hover:text-purple-600 font-medium transition-colors">
-                Finders
               </Link>
             </div>
             <div className="flex items-center space-x-2 sm:space-x-4">
